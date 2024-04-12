@@ -27,7 +27,9 @@ section {
 }
 
 :root {
-  --global-anime-time: 1.5s;
+  --cloud-anime-time: 1.5s;
+  --title-anime-time: 1.0s;
+  --foote-anime-time: 1.0s;
 }
 
 #home {
@@ -59,7 +61,7 @@ section {
   z-index: 0;
   height: 200%;
   filter: brightness(1.1);
-  animation: totop var(--global-anime-time) ease forwards;
+  animation: totop var(--cloud-anime-time) ease forwards;
 }
 
 @keyframes totop {
@@ -132,7 +134,7 @@ header h2 {
   align-items: end;
   justify-content: space-between;
   background-image: linear-gradient(to top, #000000bb, #00000050, transparent);
-  animation: intro1 var(--global-anime-time) ease;
+  animation: intro1 var(--footer-anime-time) ease;
 }
 
 @keyframes intro1 {
@@ -161,7 +163,7 @@ header h2 {
   letter-spacing: 0.5rem;
   color: #444;
   font-weight: 400;
-  animation: intro2 var(--global-anime-time) ease;
+  animation: intro2 var(--title-anime-time) ease;
 }
 
 @keyframes intro2 {
