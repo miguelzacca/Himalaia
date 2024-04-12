@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Outfit:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Outfit";
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+}
+
+#destinations {
+  background-color: #000;
+}
+
+:root {
+  --global-anime-time: 1.5s;
+}
+
+#home {
+  background-image: url("../img/himalaia.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home * {
+  z-index: 3;
+}
+
+#home .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+#home img:first-child {
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  z-index: 0;
+  transform: translateX(-25%);
+  width: 1000%;
+  z-index: 0;
+  height: 200%;
+  filter: brightness(1.1);
+  animation: totop var(--global-anime-time) ease forwards;
+}
+
+@keyframes totop {
+  to {
+    width: 750%;
+    top: -50%;
+  }
+}
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  padding: 0 5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+header a {
+  font-size: 1.6rem;
+  color: #444;
+  text-decoration: none;
+}
+
+header button {
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  font-weight: 700;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #444;
+  letter-spacing: 0.5rem;
+}
+
+#home .container {
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 2.5rem 5rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, #000000bb, #00000050, transparent);
+  animation: intro1 var(--global-anime-time) ease;
+}
+
+@keyframes intro1 {
+  from {
+    transform: translateY(50%);
+    width: 125%;
+    left: -12.5%;
+  }
+}
+
+#home .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  gap: 6rem;
+}
+
+#home .title h3 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #444;
+  font-weight: 400;
+  animation: intro2 var(--global-anime-time) ease;
+}
+
+@keyframes intro2 {
+  from {
+    margin-bottom: -5rem;
+  }
+}
+
+#home h1 {
+  font-size: 7rem;
+  font-weight: lighter;
+  letter-spacing: 1rem;
+  color: #222;
+  font-weight: 200;
+}
+
+#home .scroll-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+#home .vertical-line {
+  height: 10rem;
+  width: 0.2rem;
+  background-color: #fff;
+}
+
+#home .scroll-container h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+}
+
+#home .one-container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 2rem;
+  width: 30rem;
+  transform: translateY(1rem);
+}
+
+#home .one-container span {
+  font-size: 10rem;
+  color: #fff;
+  display: flex;
+  min-height: 50%;
+  align-items: end;
+}
+
+#home .one-container span:first-child {
+  transform: translateY(11%);
+}
+
+#home .one-container span:nth-child(2) {
+  width: 8rem;
+  height: 0.3rem;
+  transform: translateY(-0.9rem);
+  background-color: #fff;
+}
+
+#home .one-container span:last-child {
+  font-size: 3rem;
+}
+
+#home .contacts-container {
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#home .contacts-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border: 0.2rem solid #fff;
+  border-radius: 50%;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  position: relative;
+}
+
+#destinations h2 {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 200;
+}
+
+#destinations .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#destinations div:first-child {
+  z-index: 99;
+  width: 100%;
+  height: 10rem;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+strong {
+  font-weight: 600;
+  font-style: italic;
+  margin-right: 1rem;
+}
+
+#destinations .container img {
+  width: 25rem;
+  aspect-ratio: 0.7;
+}
+
+#destinations .container img:first-child {
+  animation: drive1 1ms ease-in-out;
+}
+
+#destinations .container img:last-child {
+  animation: drive2 1ms ease-in-out;
+}
+
+#destinations .container img:first-child,
+#destinations .container img:last-child {
+  animation-range: cover 0% cover 50%;
+  animation-timeline: view();
+}
+
+@keyframes drive1 {
+  from {
+    transform: translateX(-50rem);
+  }
+}
+
+@keyframes drive2 {
+  from {
+    transform: translateX(50rem);
+  }
+}
