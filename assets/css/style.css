@@ -8,6 +8,14 @@
   font-family: "Outfit";
 }
 
+#home h1 {
+  font-size: 7rem;
+  font-weight: lighter;
+  letter-spacing: 1rem;
+  color: #222;
+  font-weight: 200;
+}
+
 a {
   text-decoration: none;
 }
@@ -170,14 +178,6 @@ header h2 {
   from {
     margin-bottom: -5rem;
   }
-}
-
-#home h1 {
-  font-size: 7rem;
-  font-weight: lighter;
-  letter-spacing: 1rem;
-  color: #222;
-  font-weight: 200;
 }
 
 #home .scroll-container {
