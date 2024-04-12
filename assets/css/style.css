@@ -29,7 +29,7 @@ section {
 :root {
   --cloud-anime-time: 1.5s;
   --title-anime-time: 1.0s;
-  --foote-anime-time: 1.0s;
+  --footer-anime-time: 1.0s;
 }
 
 #home {
